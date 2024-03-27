@@ -17,15 +17,18 @@ create table players(
 );
 
 -- 1. List the names of all NFL teams'
+select name from teams;
 
 
 -- 2. List the stadium name and head coach of all NFC teams
+select stadium, head_coach from teams;
 
 
 -- 3. List the head coaches of the AFC South
-
+select head_coach from teams where division = 'South' and conference = 'AFC';
 
 -- 4. The total number of players in the NFL
+select count(*) from players;
 
 
 -- 5. The team names and head coaches of the NFC North and AFC East
